@@ -1,14 +1,39 @@
 #cs1300-gallery {
-  background-color: lightblue;
+  background-color: tan;
+}
+
+#fact-gallery {
+  background-color: antiquewhite;
 }
 
 /* Uncomment below if images are way too big.
-Selects all image tags and makes them 500px;
- */
-/*img {*/
-/*  width: 500px;*/
-/*}*/
+Selects all image tags and makes them 500px; */
+
+h1 {
+  font-style: italic;
+  font: oblique;
+}
+
+img {
+  width: 250px;
+  padding: 50px;
+}
 
 .gallery-container {
-  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  /*TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+  flex-direction: row;
+  /*flex-wrap: wrap;*/
+  justify-content: space-around;
+  overflow-x: scroll;
+}
+
+.fact-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: brown;
+}
+
+.fact {
+  display: flex;
 }
